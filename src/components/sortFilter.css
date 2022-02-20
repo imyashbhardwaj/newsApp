@@ -1,0 +1,26 @@
+#sort {
+    display: inline;
+    float: left;
+    margin-left: 11px;
+    border: none;
+}
+#filter {
+    display: inline;
+    float: right;
+    padding-right: 11px;
+}
+#sortFilter {
+    padding-bottom: 8px;
+}
+.modal-dialog {
+    position: fixed;
+    top: auto;
+    right: 2px;
+    left: 2px;
+    bottom: 0;
+}
+#getRecentbtn {
+    border: none;
+    color: gray;
+    background-color: transparent;
+}

@@ -1,0 +1,48 @@
+#image {
+    width: 100%;
+    float: left;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 145px;
+    max-height: 110px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imageContainer {
+    width: 38%;
+}
+
+.Post {
+    margin-top: 2px;
+    background-color: white;
+    height: auto;
+    min-height: 140px;
+}
+
+.content {
+    padding-top: 10px;
+    margin-left: 2px;
+}
+
+.fa-circle {
+    font-size: 7px;
+}
+
+.time {
+    display: inline;
+    color: grey;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.author {
+    bottom: 0;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.headline {
+    margin-top: 15px;
+}

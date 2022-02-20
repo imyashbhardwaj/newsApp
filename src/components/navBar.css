@@ -1,0 +1,42 @@
+.topnav {
+    /* background-color: rgb(196, 12, 12); */
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(224, 184, 53);
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: white;
+}
+
+#profileImage {
+    height: 30px;
+}
+
+#Profile {
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+#Welcome{
+    display: inline;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
