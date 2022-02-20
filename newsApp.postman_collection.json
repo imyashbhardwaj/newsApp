@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "bdde93fb-d05d-4b2d-98eb-6cc43ecc0985",
+		"name": "newsApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "simple GET ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000"
+				}
+			},
+			"response": [
+				{
+					"name": "simple GET ",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "936"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3a8-pIBEnhoi3Xqsabbwx4QNNlWOQlA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Feb 2022 10:53:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6212101c9a6aa3162c48ddd6\",\n        \"image\": \"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg\",\n        \"headline\": \"Tree Center \",\n        \"time\": \"19 Feb, 2022 6:30PM\",\n        \"tag\": \"Nature\",\n        \"author\": \"Yash Bhardwaj\"\n    },\n    {\n        \"_id\": \"621211679a6aa3162c48ddd8\",\n        \"image\": \"https://media.istockphoto.com/photos/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-picture-id1093110112\",\n        \"headline\": \"Keep moving! \",\n        \"time\": \"20 Feb, 2022 6:30PM\",\n        \"tag\": \"Nature\",\n        \"author\": \"Yash Bhardwaj\"\n    },\n    {\n        \"_id\": \"621217ead6e1a60c54d0adba\",\n        \"image\": \"https://pragativadi.com/wp-content/uploads/2021/02/asia-best-places-to-visit-mount-fuji-japan.jpg\",\n        \"headline\": \"Best Place to Vacation \",\n        \"time\": \"20 Feb, 2022 7:30PM\",\n        \"tag\": \"Tourism\",\n        \"author\": \"Yash Bhardwaj\"\n    },\n    {\n        \"_id\": \"62121912d6e1a60c54d0adbb\",\n        \"image\": \"https://www.gettyimages.com/gi-resources/images/500px/983703508.jpg\",\n        \"headline\": \"Best Trek Experience!!\",\n        \"time\": \"20 Feb, 2022 8:30PM\",\n        \"tag\": \"Tourism\",\n        \"author\": \"Tony\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "sorted Articles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sort\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000"
+				}
+			},
+			"response": [
+				{
+					"name": "sorted Articles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sort\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "936"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3a8-zE7l0ADtrnkh1q8SSGcyi4dTPag\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Feb 2022 10:54:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"62121912d6e1a60c54d0adbb\",\n        \"image\": \"https://www.gettyimages.com/gi-resources/images/500px/983703508.jpg\",\n        \"headline\": \"Best Trek Experience!!\",\n        \"time\": \"20 Feb, 2022 8:30PM\",\n        \"tag\": \"Tourism\",\n        \"author\": \"Tony\"\n    },\n    {\n        \"_id\": \"621217ead6e1a60c54d0adba\",\n        \"image\": \"https://pragativadi.com/wp-content/uploads/2021/02/asia-best-places-to-visit-mount-fuji-japan.jpg\",\n        \"headline\": \"Best Place to Vacation \",\n        \"time\": \"20 Feb, 2022 7:30PM\",\n        \"tag\": \"Tourism\",\n        \"author\": \"Yash Bhardwaj\"\n    },\n    {\n        \"_id\": \"621211679a6aa3162c48ddd8\",\n        \"image\": \"https://media.istockphoto.com/photos/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-picture-id1093110112\",\n        \"headline\": \"Keep moving! \",\n        \"time\": \"20 Feb, 2022 6:30PM\",\n        \"tag\": \"Nature\",\n        \"author\": \"Yash Bhardwaj\"\n    },\n    {\n        \"_id\": \"6212101c9a6aa3162c48ddd6\",\n        \"image\": \"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg\",\n        \"headline\": \"Tree Center \",\n        \"time\": \"19 Feb, 2022 6:30PM\",\n        \"tag\": \"Nature\",\n        \"author\": \"Yash Bhardwaj\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Filtered Articles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\":\"true\",\r\n    \"filters\": [{\"tag\":\"Nature\"},{\"tag\":\"Tourism\"}, {\"author\":\"Tony\"}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000"
+				}
+			},
+			"response": [
+				{
+					"name": "Filtered Articles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"filter\":\"true\",\r\n    \"filters\": [{\"tag\":\"Nature\"},{\"tag\":\"Tourism\"}, {\"author\":\"Tony\"}]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "936"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3a8-zE7l0ADtrnkh1q8SSGcyi4dTPag\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Feb 2022 14:34:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"62121912d6e1a60c54d0adbb\",\n        \"image\": \"https://www.gettyimages.com/gi-resources/images/500px/983703508.jpg\",\n        \"headline\": \"Best Trek Experience!!\",\n        \"time\": \"20 Feb, 2022 8:30PM\",\n        \"tag\": \"Tourism\",\n        \"author\": \"Tony\"\n    },\n    {\n        \"_id\": \"621217ead6e1a60c54d0adba\",\n        \"image\": \"https://pragativadi.com/wp-content/uploads/2021/02/asia-best-places-to-visit-mount-fuji-japan.jpg\",\n        \"headline\": \"Best Place to Vacation \",\n        \"time\": \"20 Feb, 2022 7:30PM\",\n        \"tag\": \"Tourism\",\n        \"author\": \"Yash Bhardwaj\"\n    },\n    {\n        \"_id\": \"621211679a6aa3162c48ddd8\",\n        \"image\": \"https://media.istockphoto.com/photos/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-picture-id1093110112\",\n        \"headline\": \"Keep moving! \",\n        \"time\": \"20 Feb, 2022 6:30PM\",\n        \"tag\": \"Nature\",\n        \"author\": \"Yash Bhardwaj\"\n    },\n    {\n        \"_id\": \"6212101c9a6aa3162c48ddd6\",\n        \"image\": \"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg\",\n        \"headline\": \"Tree Center \",\n        \"time\": \"19 Feb, 2022 6:30PM\",\n        \"tag\": \"Nature\",\n        \"author\": \"Yash Bhardwaj\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Yash Bhardwaj\",\r\n    \"mobile\": \"9871320823\",\r\n    \"email\": \"imaybhardwaj@gmail.com\",\r\n    \"gender\": \"Male\",\r\n    \"DOB\":\"11/3/99\",\r\n    \"username\":\"imyash\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Profile",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Yash Bhardwaj\",\r\n    \"mobile\": \"9871320823\",\r\n    \"email\": \"imaybhardwaj@gmail.com\",\r\n    \"gender\": \"Male\",\r\n    \"DOB\":\"11/3/99\",\r\n    \"username\":\"imyash\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7-U6VofLJtxB8qtAM+l+E63v03QNY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Feb 2022 18:02:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "success"
+				}
+			]
+		}
+	]
+}
